@@ -19,12 +19,6 @@ endif
 dev: install
 	$(COMPOSE) up $(ARGS)
 
-.PHONY: cpenv
-cpenv:
-ifeq (,$(wildcard ./my-app/.env))
-	cp ./my-app/.env.example ./my-app/.env
-endif
-
 install-frontend:
 	pushd frontend && \
 		yarn install && \

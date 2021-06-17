@@ -9,7 +9,7 @@ services:
     depends_on:
       - app
 
-  app:
+  ap1:
     image: php:fpm-alpine3.13
     working_dir: /app
     volumes:
